@@ -8,7 +8,8 @@ reconstrução PCA, implementados em NumPy — sem scikit-learn.
 ## Uso
 
     pip install -r requirements.txt
-    cd codigo && python executar.py
+    cd codigo && python executar.py   # experimento completo
+    python -m pytest                  # testes (da raiz do repositório)
 
 Roda o experimento completo — extração de atributos, posto, 100 rodadas Monte
 Carlo por configuração, redução PCA e curva ROC — e regrava `resultados/` em
@@ -62,6 +63,7 @@ potência descarta a fase que carrega essa forma.
 
     codigo/deteccao_anomalias.py   atributos, detectores, métricas e protocolo
     codigo/executar.py             experimento completo; salva tabelas e figuras
+    tests/                         pytest: detectores contra referências independentes
     dados/ecg5000.csv              4998 batimentos × 140 amostras (2919 normais)
     resultados/                    tabelas CSV, resumo JSON e figuras
     relatorio/                     relatório em LaTeX e PDF
