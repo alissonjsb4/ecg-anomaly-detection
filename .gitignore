@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# artefatos de build do LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.brf
